@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Aaron Nathaniel</title>
+  <style>
+    :root{
+      --stabilo: #7CFF6A;
+      --stabilo-2: #bfffb0;
+      --dark: #0b0f10;
+      --muted: #5b5f62;
+      --card: #ffffff;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    html,body{height:100%;margin:0;background:linear-gradient(180deg, rgba(124,255,106,0.12), rgba(124,255,106,0.04)), #f6fff7;color:var(--dark);-webkit-font-smoothing:antialiased;}
+
+    .page{
+      max-width:980px;
+      margin:36px auto;
+      display:grid;
+      grid-template-columns: 1fr 2fr;
+      gap:22px;
+      padding:22px;
+    }
+
+    /* Left column */
+    .side{
+      background: linear-gradient(180deg, var(--stabilo), var(--stabilo-2));
+      border-radius:14px;
+      padding:20px;
+      color:#06210a;
+      box-shadow: 0 10px 30px rgba(6,33,10,0.12);
+    }
+
+    .avatar{
+      width:100%;
+      height:140px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.85);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      font-size:18px;
+      color:var(--dark);
+      margin-bottom:14px;
+    }
+
+    .name{font-size:20px;font-weight:900;margin:6px 0;}
+    .role{font-size:13px;color:rgba(6,33,10,0.85);margin-bottom:12px;}
+
+    .block{background:rgba(255,255,255,0.12);padding:12px;border-radius:10px;margin-bottom:12px;}
+    .block h4{margin:0 0 8px 0;font-size:13px;color:#06210a;}
+    .block p{margin:4px 0;color:#06210a;font-size:14px;}
+
+    .skills ul{list-style:none;padding:0;margin:0;}
+    .skills li{margin:6px 0;color:#06210a;font-weight:600;}
+
+    /* Right column */
+    .main{
+      background:var(--card);
+      border-radius:14px;
+      padding:24px;
+      box-shadow: 0 12px 36px rgba(6,33,10,0.06);
+    }
+
+    .section{margin-bottom:18px;}
+    .section h3{
+      margin:0 0 10px 0;
+      font-size:16px;
+      color:var(--stabilo);
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .section h3 .dot{width:10px;height:10px;border-radius:50%;background:var(--stabilo);box-shadow:0 0 12px rgba(124,255,106,0.45);}
+
+    .profile p{margin:0;color:var(--muted);line-height:1.5;}
+    .exp-item{padding:12px;border-radius:10px;background:#fbfff9;margin-bottom:10px;border-left:4px solid var(--stabilo-2);}
+    .exp-item h4{margin:0 0 6px 0;color:#0b3b1f;}
+    .exp-item p{margin:0;color:#333;}
+
+    /* Print friendly */
+    @media print{
+      body{background:white;}
+      .page{box-shadow:none;margin:0;}
+      .side{box-shadow:none;}
+      .main{box-shadow:none;}
+    }
+
+    @media (max-width:880px){
+      .page{grid-template-columns:1fr;padding:16px;}
+      .avatar{height:110px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="page" role="main" aria-label="Curriculum Vitae Aaron Nathaniel">
+    <aside class="side" aria-label="Informasi pribadi">
+      <div class="avatar" aria-hidden="true">AARON NATHANIEL</div>
+      <div class="name">Aaron Nathaniel</div>
+      <div class="role">Animating · 3D · Rigging</div>
+
+      <div class="block contact" aria-label="Kontak">
+        <h4><strong>Kontak</strong></h4>
+        <p><strong>Telepon:</strong> 0821-1517-7232</p>
+        <p><strong>Email:</strong> 262710001.aaron.nathaniel@mathibpk.penabur.sch.id</p>
+        <p><strong>Alamat:</strong> Thi 2 C1 No 3</p>
+      </div>
+
+      <div class="block skills" aria-label="Kemampuan">
+        <h4><strong>Kemampuan</strong></h4>
+        <ul>
+          <li>Animating 3D</li>
+          <li>Editing</li>
+          <li>Coding</li>
+          <li>Rigging</li>
+        </ul>
+      </div>
+
+      <div class="block education" aria-label="Pendidikan">
+        <h4><strong>Pendidikan</strong></h4>
+        <p>SDK BPK PENABUR HOLIS</p>
+        <p>SMP BPK Penabur Holis</p>
+      </div>
+    </aside>
+
+    <main class="main" aria-label="Profil dan pengalaman">
+      <section class="section profile" aria-labelledby="profile-heading">
+        <h3 id="profile-heading"><span class="dot" aria-hidden="true"></span>Profil</h3>
+        <p>Memiliki bekal pendidikan di Sekolah BPK Penabur Holis; saat ini SMA kelas 10. Saya sangat menyukai 3D, animasi, dan rigging serta aktif mengembangkan keterampilan praktis di bidang tersebut.</p>
+      </section>
+
+      <section class="section" aria-labelledby="work-heading">
+        <h3 id="work-heading"><span class="dot" aria-hidden="true"></span>Pengalaman Kerja</h3>
+
+        <div class="exp-item">
+          <h4>Pembuat animasi Roblox</h4>
+          <p>Saya membuat animasi Roblox dan menjualnya lewat Microsoft Store.</p>
+        </div>
+
+        <div class="exp-item">
+          <h4>Mengikuti Lomba IKMC</h4>
+          <p>Meraih Bronze Medal dalam kompetisi.</p>
+        </div>
+
+        <div class="exp-item">
+          <h4>Membuat game di Max 2D</h4>
+          <p>Proyek pembuatan game di Max 2D (sedang dalam proses, progress sekitar 50%).</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="notes-heading">
+        <h3 id="notes-heading"><span class="dot" aria-hidden="true"></span>Catatan Tambahan</h3>
+        <p style="margin:0;color:#333;">Portofolio animasi dan contoh kerja tersedia atas permintaan. Untuk menambahkan foto profil atau ikon sosial, ganti elemen <code>.avatar</code> dengan tag <code>&lt;img&gt;</code> dan sesuaikan CSS.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
