@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooncake Festival 2026 - SMA BPK PENABUR HOLIS</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary-red: rgba(139, 28, 28, 0.9); /* Sedikit transparan */
+            --dark-red: rgba(61, 20, 20, 0.85); /* Sedikit transparan */
+            --gold: #d4af37;
+            --light-gold: #f9e596;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            /* Mengganti background dengan gambar yang diberikan */
+            background-image: url('image_f91bde.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Membuat efek parallax ringan */
+            background-color: #2b0f0f; /* Fallback color */
+        }
+
+        header {
+            background-color: var(--primary-red);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+            backdrop-filter: blur(5px); /* Efek blur pada background header */
+        }
+
+        /* Styling untuk container logo */
+        .header-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        .header-logos img {
+            height: 90px;
+            width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            background-color: white; /* Memberi dasar putih agar logo terlihat jelas */
+            padding: 5px;
+        }
+
+        .header-logos img.round {
+            border-radius: 50%; /* Membuat logo OSIS bulat */
+        }
+
+        h1 {
+            color: var(--gold);
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-top: 10px;
+            color: var(--light-gold);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .date-location {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: var(--gold);
+            color: #3d1414;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: var(--dark-red);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            backdrop-filter: blur(8px); /* Membaca teks lebih mudah dengan efek blur */
+        }
+
+        h2 {
+            color: var(--gold);
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 10px;
+            margin-top: 0;
+            display: inline-block;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        /* Styling untuk gambar orang bernyanyi */
+        .featured-image {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .featured-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid var(--gold);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+        }
+
+        /* Styling untuk daftar lomba */
+        .competition-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .competition-list li {
+            background-color: rgba(139, 28, 28, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 calc(50% - 15px);
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            border: 1px solid var(--gold);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: default;
+        }
+
+        .competition-list li:hover {
+            transform: translateY(-5px);
+            background-color: var(--gold);
+            color: #3d1414;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(26, 8, 8, 0.95);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-top: 3px solid var(--gold);
+        }
+
+        .contact-info {
+            font-size: 1.1em;
+            color: var(--light-gold);
+        }
+
+        .contact-info span {
+            display: inline-block;
+            margin: 5px 15px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .header-logos img { height: 60px; }
+            .competition-list li { flex: 1 1 100%; }
+            .container { margin: 20px; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Logo BPK Penabur dan OSIS SION -->
+        <div class="header-logos">
+            <img src="image_f8c8ae.png" alt="Logo BPK Penabur">
+            <img src="image_f91ae2.png" alt="Logo OSIS SION" class="round">
+        </div>
+        
+        <h1>Mooncake Festival 2026</h1>
+        <div class="subtitle">"Celebrating Culture and Education Together - Explore Your Future in Harmony"</div>
+        <div class="date-location">
+            📅 25 September 2026 <br>
+            📍 SMA BPK PENABUR HOLIS
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Section Pengenalan -->
+        <section>
+            <h2>Pengenalan</h2>
+            <p>
+                Selamat datang di perayaan <strong>Mooncake Festival 2026</strong> yang diselenggarakan oleh SMA BPK PENABUR HOLIS! 
+                Tahun ini, kami mengajak seluruh siswa, guru, dan keluarga untuk bersama-sama merayakan keindahan budaya dan mempererat tali persaudaraan. 
+                Melalui acara ini, kami menyediakan panggung bagi generasi muda untuk mengekspresikan bakat mereka dalam harmoni budaya dan pendidikan, 
+                sekaligus merayakan momen yang penuh makna bersama komunitas sekolah.
+            </p>
+        </section>
+
+        <!-- Section Sejarah Singkat -->
+        <section>
+            <h2>Sejarah Singkat Mooncake Festival</h2>
+            <p>
+                Mooncake Festival, atau yang juga dikenal sebagai Festival Pertengahan Musim Gugur (Mid-Autumn Festival), 
+                merupakan salah satu perayaan tradisional terbesar yang dirayakan pada hari ke-15 bulan ke-8 kalender lunar, di mana bulan diyakini berada pada titik paling bulat dan paling terang.
+            </p>
+            <p>
+                Secara historis, perayaan ini berawal dari tradisi bersyukur atas hasil panen musim gugur. Selain itu, festival ini sangat erat dengan legenda "Chang'e Terbang ke Bulan". 
+                Saat ini, Mooncake Festival identik dengan tradisi berkumpul bersama keluarga tercinta, menerbangkan lampion, dan tentunya menikmati kue bulan (mooncake) 
+                yang berbentuk bulat sebagai simbol keutuhan, kemakmuran, dan reuni keluarga.
+            </p>
+        </section>
+
+        <!-- Menyisipkan Gambar Orang Nyanyi -->
+        <section class="featured-image">
+            <img src="image_f91ee0.png" alt="Penampilan Siswa Bernyanyi">
+        </section>
+
+        <!-- Section Daftar Lomba -->
+        <section>
+            <h2>Daftar Lomba & Pertandingan</h2>
+            <p>Tunjukkan bakat dan kemampuanmu! Berikut adalah daftar kompetisi yang akan diadakan untuk memeriahkan acara tahun ini:</p>
+            <ul class="competition-list">
+                <li>🎤 Singing Competition</li>
+                <li>💃 Dance Competition</li>
+                <li>🗣️ Speech Competition</li>
+                <li>👗 Fashion Show Competition</li>
+                <li>🏀 Basketball Match</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="contact-info">
+            <p><strong>For more information please visit us on:</strong></p>
+            <span>📱 TikTok/Instagram: @smabpkpenaburholis</span>
+            <span>📞 Contact Us: 0822-1622-1688</span>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9em; color: #aaa;">
+            &copy; 2026 OSIS SION - SMA BPK PENABUR HOLIS. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
